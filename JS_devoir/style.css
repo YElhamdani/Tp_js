@@ -84,3 +84,16 @@ img{
     margin: 5px;
 }
 
+select{
+    background-color: chartreuse;
+    
+}
+
+.ok{
+    background-color: aqua;
+    width: 80px;
+    height: 80px;
+    background-image: url(./src/man.png);
+    background-size: cover;
+}
+
