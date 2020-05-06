@@ -13,6 +13,9 @@ body{
     background-color: #D3D3D3;
     border: solid 3px;
     border-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .container{
@@ -95,5 +98,12 @@ select{
     height: 80px;
     background-image: url(./src/man.png);
     background-size: cover;
+}
+
+.Mesdiv{
+    width: 80px;
+    height: 80px;
+    background-color: chocolate;
+    margin: 5px;
 }
 

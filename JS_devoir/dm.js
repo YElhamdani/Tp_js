@@ -1,18 +1,24 @@
 // Création des 30 personnages
-for (let i = 0; i < 31; i++) {
+for (var i = 0; i < 31; i++) {
+    let nombre = 0
+    var div = document.createElement('div');
+    div.setAttribute('class', "Mesdiv");
+    div.setAttribute('id', "id["+ i +"]"  )
+    document.getElementById('people').appendChild(div);
+    
+    
     var btn = document.createElement('input');
     btn.setAttribute('type', "button");
     btn.setAttribute('class', "ok");
-    document.getElementById('people').appendChild(btn);
-    
-}
+    document.getElementById("id["+ i +"]").appendChild(btn);
+} 
 
 let CreationFormulaire = ()=>{
     //Création du formulaire au clics
     let Form = document.createElement('form');
     Form.setAttribute('method',"post");
     Form.setAttribute('action',"#");
-    document.querySelector('#people').appendChild(Form);
+    document.getElementById("id["+ i +"]").appendChild(Form);
 
     let Select = document.createElement('select');
     Select.setAttribute('name', "selection");
@@ -51,23 +57,23 @@ let CreationFormulaire = ()=>{
 let TousLesGens = document.querySelectorAll('#people img');
 for (let i = 0; i < TousLesGens.length; i++) {
     let UnePersonne = TousLesGens[i];
-    // UnePersonne.addEventListener('click',()=>{
+    UnePersonne.addEventListener('click',function(){
         
-    //     CreationFormulaire();
+        CreationFormulaire();
        
-    // });
+    });
 
 }
 
 // Génere couleur 
-function random_bg_color() {
-    var x = Math.floor(Math.random() * 256);
-    var y = Math.floor(Math.random() * 256);
-    var z = Math.floor(Math.random() * 256);
-    var bgColor = "rgb(" + x + "," + y + "," + z + ")";
-  console.log(bgColor);
-    document.body.style.background = bgColor;
-    }
+// function random_bg_color() {
+//     var x = Math.floor(Math.random() * 256);
+//     var y = Math.floor(Math.random() * 256);
+//     var z = Math.floor(Math.random() * 256);
+//     var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+//   console.log(bgColor);
+//     document.body.style.background = bgColor;
+//     }
 
 
 
