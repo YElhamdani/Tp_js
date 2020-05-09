@@ -1,3 +1,3 @@
 # Tp_js
 Devoir js Pierre Velon
-dur
+finis pv bientot
